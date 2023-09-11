@@ -14,11 +14,11 @@ int main(void)
 
 	        while (number <= 9)
 			    {
-				            putchar(number + '0');  // Convert and print as a character
-								    //         number++;
-								    //             }
-								    //
-								    //                 putchar('\n');
-								    //
-								    //                     return (0);
-								    //                     }
+				            putchar(number + '0');  /* Convert and print as a character */
+					            number++;
+						        }
+
+		    putchar('\n');
+
+		        return (0);
+}
