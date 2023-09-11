@@ -1,4 +1,4 @@
-nclude <stdio.h>
+include <stdio.h>
 
 /**
  *  * main - Entry point
@@ -10,19 +10,19 @@ nclude <stdio.h>
  *        */
 int main(void)
 {
-	    char hexChar;
+	    char i;
 
-	        for (hexChar = '0'; hexChar <= '9'; hexChar++)
+	        for (i = '0'; i <= '9'; i++)
 			    {
-				            putchar(hexChar);
+				            putchar(i);
 					        }
 
-		    for (hexChar = 'a'; hexChar <= 'f'; hexChar++)
+		    for (i = 'a'; i <= 'f'; i++)
 			        {
-					        putchar(hexChar);
+					        putchar(i);
 						    }
 
 		        putchar('\n');
 
-			    return (0);
+			    return 0;
 }
