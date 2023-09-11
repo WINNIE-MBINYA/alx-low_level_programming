@@ -6,34 +6,31 @@
  *  * main - Entry point
  *   *
  *    * Description: This program generates a random number and prints whether
- *     *              its last digit is greater than 5, equal to 0, or less than 6
+ *     *              it is positive, negative, or zero.
  *      *
  *       * Return: Always 0 (Success)
  *        */
 int main(void)
 {
 	    int n;
-	        int lastDigit;
 
-		    srand(time(0));
-		        n = rand() - RAND_MAX / 2;
+	        srand(time(0));
+		    n = rand() - RAND_MAX / 2;
 
-			    lastDigit = n % 10;
+		        printf("The number %d is ", n);
 
-			        printf("Last digit of %d is %d and is ", n, lastDigit);
-
-				    if (lastDigit > 5)
+			    if (n > 0)
+				        {
+						        printf("positive\n");
+							    }
+			        else if (n < 0)
+					    {
+						            printf("negative\n");
+							        }
+				    else
 					        {
-							        printf("greater than 5\n");
+							        printf("zero\n");
 								    }
-				        else if (lastDigit == 0)
-						    {
-							            printf("0\n");
-								        }
-					    else
-						        {
-								        printf("less than 6 and not 0\n");
-									    }
 
-					        return (0);
+				        return (0);
 }
