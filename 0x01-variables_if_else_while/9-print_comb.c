@@ -1,20 +1,27 @@
 nclude <stdio.h>
 
-int main(void) {
-	  /* Prints all possible combinations of single-digit numbers,
-	   *    * separated by commas and spaces, in ascending order. */
-	  putchar('0');
-	    putchar(',');
-	      putchar(' ');
-	        putchar('1');
+/**
+ *  * main - Entry point
+ *   *
+ *    * Description: This program prints all possible combinations of single-digit
+ *     * numbers in ascending order, separated by ", ".
+ *      *
+ *       * Return: Always 0 (Success)
+ *        */
+int main(void)
+{
+	    int num = 0;
 
-		  for (int i = 2; i < 10; i++) {
-			      putchar(',');
-			          putchar(' ');
-				      putchar(i + '0');
-				        }
+	        while (num < 9)
+			    {
+				            putchar(num + '0');
+					            putchar(',');
+						            putchar(' ');
+							            num++;
+								        }
 
-		    putchar('\n');
+		    putchar(num + '0');  /* Print the last digit (9) without comma and space */
+		        putchar('\n');
 
-		      return 0;
+			    return (0);
 }
