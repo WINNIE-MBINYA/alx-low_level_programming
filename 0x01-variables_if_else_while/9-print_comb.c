@@ -10,44 +10,20 @@ nclude <stdio.h>
  *        */
 int main(void)
 {
-	    putchar('0');
-	        putchar(',');
-		    putchar(' ');
+	    int n = '0';
 
-		        putchar('1');
-			    putchar(',');
-			        putchar(' ');
+	        while (n <= '9')
+			    {
+				            putchar(n);
+					            if (n != '9')
+							            {
+									                putchar(',');
+											            putchar(' ');
+												            }
+						            n++;
+							        }
 
-				    putchar('2');
-				        putchar(',');
-					    putchar(' ');
+		    putchar('\n');
 
-					        putchar('3');
-						    putchar(',');
-						        putchar(' ');
-
-							    putchar('4');
-							        putchar(',');
-								    putchar(' ');
-
-								        putchar('5');
-									    putchar(',');
-									        putchar(' ');
-
-										    putchar('6');
-										        putchar(',');
-											    putchar(' ');
-
-											        putchar('7');
-												    putchar(',');
-												        putchar(' ');
-
-													    putchar('8');
-													        putchar(',');
-														    putchar(' ');
-
-														        putchar('9');
-															    putchar('\n');
-
-															        return (0);
+		        return (0);
 }
