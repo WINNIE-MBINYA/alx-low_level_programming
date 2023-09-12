@@ -10,18 +10,44 @@ nclude <stdio.h>
  *        */
 int main(void)
 {
-	    int num = 0;
+	    putchar('0');
+	        putchar(',');
+		    putchar(' ');
 
-	        while (num < 9)
-			    {
-				            putchar(num + '0');
-					            putchar(',');
-						            putchar(' ');
-							            num++;
-								        }
+		        putchar('1');
+			    putchar(',');
+			        putchar(' ');
 
-		    putchar(num + '0');  /* Print the last digit (9) without comma and space */
-		        putchar('\n');
+				    putchar('2');
+				        putchar(',');
+					    putchar(' ');
 
-			    return (0);
+					        putchar('3');
+						    putchar(',');
+						        putchar(' ');
+
+							    putchar('4');
+							        putchar(',');
+								    putchar(' ');
+
+								        putchar('5');
+									    putchar(',');
+									        putchar(' ');
+
+										    putchar('6');
+										        putchar(',');
+											    putchar(' ');
+
+											        putchar('7');
+												    putchar(',');
+												        putchar(' ');
+
+													    putchar('8');
+													        putchar(',');
+														    putchar(' ');
+
+														        putchar('9');
+															    putchar('\n');
+
+															        return (0);
 }
