@@ -4,7 +4,13 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-typedef struct printer{
+/**
+ * struct printer - A structure for printing different types.
+ * @symbol: The format specifier symbol.
+ * @print: A function pointer to the corresponding print function.
+ */
+typedef struct printer
+{
 char *symbol;
 void (*print)(va_list arg);
 } printer_t;
@@ -19,4 +25,4 @@ void print_float(va_list arg);
 void print_string(va_list arg);
 void print_all(const char * const format, ...);
 
-#endif
+#endif /* VARIADIC_FUNCTIONS_H */
