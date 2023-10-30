@@ -12,12 +12,12 @@
  * @letters: The number of letters the function should read and print.
  *
  * Return: If the function fails or filename is NULL - 0.
- *         Otherwise - the actual number of bytes the function can read and print.
+ *         O/w - the actual number of bytes the function can read and print.
  */
 ssize_t read_textfile(const char *filename, size_t letters);
 
 /*
- * create_file - Creates a file with a given filename and writes text_content to it.
+ * create_file - Creates a file with it's name and writes text_content to it
  * @filename: A pointer to the name of the file.
  * @text_content: The content to write to the file.
  *
