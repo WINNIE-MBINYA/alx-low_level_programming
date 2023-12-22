@@ -1,4 +1,3 @@
-
 #include "hash_tables.h"
 
 /**
@@ -9,6 +8,9 @@
  *
  * Return: Upon failure - 0.
  *         Otherwise - 1.
+ *
+ * Description: This function adds or updates an element in a hash table.
+ *              It uses the djb2 algorithm to calculate the index for the key.
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
