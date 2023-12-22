@@ -2,13 +2,15 @@
 
 /**
  * key_index - Get the index at which a key/value pair should
- *             be stored in array of a hash table.
+ *             be stored in the array of a hash table.
  * @key: The key to get the index of.
  * @size: The size of the array of the hash table.
  *
  * Return: The index of the key.
  *
- * Description: Uses the djb2 algorithm.
+ * Description: This function uses the djb2 algorithm to calculate
+ *              the hash value of the key and then takes the modulo
+ *              with the size of the array to determine the index.
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
