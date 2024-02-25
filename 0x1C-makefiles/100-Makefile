@@ -8,16 +8,19 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 all: $(NAME)
 
 $(NAME): $(OBJ)
-    $(CC) $(OBJ) -o $@
+	$(CC) $(OBJ) -o $@
 
 clean:
-    $(RM) $(NAME)
+	$(RM) $(NAME)
 
 oclean:
-    $(RM) $(OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
 re: fclean all
 
--include m.h
+m.h:
+	@echo "Error: Header file \"m.h\" is missing."
+	@exit 1
+
